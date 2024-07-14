@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.projects {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.project-container {
+    margin-bottom: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-photo {
+    flex: 1 1 40%;
+    max-width: 40%;
+}
+
+.project-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-content {
+    flex: 1 1 60%;
+    max-width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project-content h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color:#f04fe8;
+}
+
+.project-content p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project-photo, .project-content {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+}
+
+    </style>
+    <section class="projects">
+        <h2>My Small Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <div class="project-photo">
+                    <img src="blooddonation.jpg" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <h3>Blood Donation Record System </h3>
+                    <p>It is a web-based application designed to streamline the management of blood donation records using front-end technologies and a robust DBMS (Database Management System). This system enables users to efficiently record, update, and retrieve donor information, blood type details, and donation history. It ensures a user-friendly interface, while the DBMS tables provide a secure and organized structure for data storage, ensuring accuracy and accessibility. This project aims to enhance the efficiency and reliability of blood donation management for hospitals and blood banks.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project">
+                <div class="project-photo">
+                    <img src="careerdir.jpg" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <h3>Career Directions</h3>
+                    <p>Career Directions is a desktop application developed using Java and the NetBeans IDE, designed to assist users in exploring and planning their career paths. The application offers personalized career guidance by assessing users' skills, interests, and goals, and providing tailored career recommendations. With an intuitive interface, Career Directions simplifies the process of career planning, helping users make informed decisions about their professional future.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project">
+                <div class="project-photo">
+                    <img src="flappybird.jpg" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <h3>Flappy Bird Game</h3>
+                    <p>Flappy Bird Game is a Python-based project that replicates the popular arcade-style game where players navigate a bird through a series of pipes without hitting them. Developed using Python's Pygame library, this project features simple yet engaging graphics, smooth gameplay mechanics, and an intuitive control system. The game challenges players' timing and coordination, providing an entertaining and nostalgic gaming experience.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project">
+                <div class="project-photo">
+                    <img src="studentmgmt.jpg" alt="Project 4">
+                </div>
+                <div class="project-content">
+                    <h3>Student Management System</h3>
+                    <p>The Student Management System is a simple project developed using basic C language, designed to manage student records efficiently. It allows users to add, view, modify, and delete student information such as names, roll numbers, and grades. This console-based application provides a straightforward and effective solution for managing student data, making it an ideal project for learning fundamental programming concepts in C.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
